@@ -6,6 +6,8 @@ function LayerGraph = DACblock(LayerGraph, InputLayerName, convSize)
 
 % input: 14*14*512 in original paper
 % output: 14*14*512 in original paper
+
+% InputLayerName:layer name to connect!
 % convSize: The author of CEnet suggest use 512, you can modify the conv
 % kernel size to save GPU memory, but the accuracy may descend!
 
