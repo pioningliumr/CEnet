@@ -1,11 +1,11 @@
 % create CEnet,base on Paper:Gu Z , Cheng J , Fu H , et al. CE-Net: Context Encoder Network for 2D Medical Image Segmentation[J]. 
 % IEEE Transactions on Medical Imaging, 2019:1-1.
-% written by Mr zhipan Wang, zhonwu Wang,if you have any question, Please
+% written by Mr zhipan Wang, zhonwu Wang,China remote sensing Application Center,Bei Jing, if you have any question, Please
 % contacet me :1044625113@qq.com
 
 
 function lgraph = createCEnet(inputTileSize,numClass)
-% numClass:表示类别个数，例如二分类填写2即可，该函数已经重写
+% numClass:琛ㄧず绫诲埆涓暟锛屼緥濡備簩鍒嗙被濉啓2鍗冲彲锛岃鍑芥暟宸茬粡閲嶅啓
 
 % Network parameters taken from the publication
 encoderDepth = 4;
@@ -156,7 +156,7 @@ for sections = 1:encoderDepth
     layerIndex = layerIndex + 7;
 end
 
-finalConv = convolution2dLayer(1,numClass,...  %类别个数
+finalConv = convolution2dLayer(1,numClass,...  %绫诲埆涓暟
     'BiasL2Factor',0,...
     'Name','Final-ConvolutionLayer');
 
